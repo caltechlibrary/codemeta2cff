@@ -1,0 +1,20 @@
+name: Render
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason'
+        required: false
+        default: 'Manual trigger'
+
+jobs:
+  Render:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: caltechlibrary/codemeta2cff
