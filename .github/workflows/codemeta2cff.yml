@@ -2,9 +2,8 @@ name: Render
 
 on:
   push:
-    branches: main
-      tags:
-        - v*
+    tags:
+      - v*    
   workflow_dispatch:
     inputs:
       reason:
