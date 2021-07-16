@@ -20,4 +20,4 @@ runs:
       run: chmod +x codemeta2cff
     - name: Convert
       shell: bash
-      run: codemeta2cff
+      run: ./codemeta2cff
