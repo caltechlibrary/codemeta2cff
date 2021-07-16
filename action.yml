@@ -12,6 +12,12 @@ runs:
     - name: mv
       shell: bash
       run: mv datatools/bin/codemeta2cff .
+    - name: ls
+      shell: bash
+      run: ls
+    - name: chmod
+      shell: bash
+      run: chmod +x codemeta2cff
     - name: Convert
       shell: bash
       run: codemeta2cff
