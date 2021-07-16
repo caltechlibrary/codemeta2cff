@@ -1,4 +1,4 @@
-name: Codemeta2CFF
+name: CodeMeta2CFF
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
         default: 'Manual trigger'
 
 jobs:
-  Codemeta2CFF:
+  CodeMeta2CFF:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout

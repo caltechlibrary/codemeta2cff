@@ -1,4 +1,8 @@
-name: Codemeta2CFF
+name: CodeMeta2CFF
+description: Convert a CodeMeta file to Citation File Format (cff)
+branding:
+  color: orange
+  icon: arrow-right
 
 runs:
   using: "composite"

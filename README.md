@@ -1,12 +1,12 @@
-Codemeta2CFF
+CodeMeta2CFF
 =====================================================
 
-A demo of a GitHub action to convert a codemeta.json file to CITTION.cff upon a
-release. This frees users from having to update a CITATION.cff file
+A GitHub action to convert a codemeta.json file to CITATION.cff. This allows
+users to skip updating a CITATION.cff file
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
 [![Latest release](https://img.shields.io/github/v/release/caltechlibrary/template.svg?style=flat-square&color=b44e88)](https://github.com/caltechlibrary/template/releases)
-[![DOI](https://data.caltech.edu/badge/201106666.svg)](https://data.caltech.edu/badge/latestdoi/201106666)
+[![DOI](https://data.caltech.edu/badge/386727932.svg)](https://data.caltech.edu/badge/latestdoi/386727932)
 
 
 Table of contents
@@ -23,11 +23,24 @@ Table of contents
 Introduction
 ------------
 
+If you have a [CodeMeta](https://codemeta.github.io) file in your repository,
+you can use this action to automatically convert it into a [Citation File Format
+(cff)](https://citation-file-format.github.io) file automatically. Add the
+following to your workflow
+
+```
+      - name: Convert CFF
+        uses: caltechlibrary/codemeta2cff@main
+```
+
+A full workflow for converting on a release is available at https://github.com/caltechlibrary/codemeta2cff/blob/main/.github/workflows/codemeta2cff.yml
+
 
 Known issues and limitations
 ----------------------------
 
-This action is under development and has not been fully tested.
+Only a limited subset of CodeMeta and CFF fields have been mapped. You can
+contribute by improving the codemeta2cff application at https://github.com/caltechlibrary/datatools
 
 Getting help
 ------------
@@ -51,8 +64,6 @@ Acknowledgments
 ---------------
 
 This work was funded by the California Institute of Technology Library.
-
-(If this work was also supported by other organizations, acknowledge them here.  In addition, if your work relies on software libraries, or was inspired by looking at other work, it is appropriate to acknowledge this intellectual debt too.)
 
 <div align="center">
   <br>
