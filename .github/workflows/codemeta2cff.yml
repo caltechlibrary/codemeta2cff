@@ -12,7 +12,7 @@ on:
         default: 'Manual trigger'
 
 jobs:
-  Render:
+  Codemeta2CFF:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
