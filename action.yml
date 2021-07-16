@@ -4,10 +4,14 @@ runs:
   using: "composite"
   steps:
     - name: wget
+      shell: bash
       run: wget -O datatools.zip https://github.com/caltechlibrary/datatools/releases/download/v1.0.4-dev/datatools-1.0.4-dev-linux-amd64.zip
     - name: unzip
+      shell: bash
       run: unzip -qq datatools.zip -d datatools
-    - nake: mv
+    - name: mv
+      shell: bash
       run: mv datatools/codemeta2cff .
     - name: Convert
+      shell: bash
       run: codemeta2cff
