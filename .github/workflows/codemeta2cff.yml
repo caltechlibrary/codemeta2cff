@@ -3,8 +3,8 @@ name: Render
 on:
   push:
     branches: main
-  pull_request:
-    branches: main
+      tags:
+        - v*
   workflow_dispatch:
     inputs:
       reason:
@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: caltechlibrary/codemeta2cff
+        uses: caltechlibrary/codemeta2cff@main
