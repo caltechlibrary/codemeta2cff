@@ -15,14 +15,14 @@
   "developmentStatus": "active",
   "downloadUrl": "https://github.com/caltechlibrary/codemeta2cff/archive/main.zip",
   "codeRepository": "https://github.com/caltechlibrary/codemeta2cff",
-  "datePublished": "2021-07-02",
+  "datePublished": "2021-07-16",
   "keywords": [
     "codemeta",
     "software",
     "cff"
   ],
   "name": "codemeta2cff",
-  "description": "GitHub Action for converting codemeta to CITATION.cff upon release",
+  "description": "GitHub Action for converting a CodeMeta file to CITATION.cff",
   "version": "0.0.1",
-  "maintainer": "https://orcid.org/0000-0001-9105-5960"
+  "maintainer": "https://orcid.org/0000-0001-9266-5146"
 }
