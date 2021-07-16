@@ -2,10 +2,10 @@ CodeMeta2CFF
 =====================================================
 
 A GitHub action to convert a codemeta.json file to CITATION.cff. This allows
-users to skip updating a CITATION.cff file
+users to avoid updating multiple files.
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
-[![Latest release](https://img.shields.io/github/v/release/caltechlibrary/template.svg?style=flat-square&color=b44e88)](https://github.com/caltechlibrary/template/releases)
+[![Latest release](https://img.shields.io/github/v/release/caltechlibrary/codemeta2cff.svg?style=flat-square&color=b44e88)](https://github.com/caltechlibrary/codemeta2cff/releases)
 [![DOI](https://data.caltech.edu/badge/386727932.svg)](https://data.caltech.edu/badge/latestdoi/386727932)
 
 
@@ -25,11 +25,11 @@ Introduction
 
 If you have a [CodeMeta](https://codemeta.github.io) file in your repository,
 you can use this action to automatically convert it into a [Citation File Format
-(cff)](https://citation-file-format.github.io) file automatically. Add the
+(cff)](https://citation-file-format.github.io) file. Add the
 following to your workflow
 
 ```
-      - name: Convert CFF
+      - name: Convert to CFF
         uses: caltechlibrary/codemeta2cff@main
 ```
 
@@ -54,7 +54,7 @@ License
 Software produced by the Caltech Library is Copyright © 2021 California Institute of Technology.  This software is freely distributed under a BSD/MIT type license.  Please see the [LICENSE](LICENSE) file for more information.
 
 
-Authors and historyd
+Authors and history
 ---------------------------
 
 This action was developed by Tom Morrell, using the codemeta2cff Go application
