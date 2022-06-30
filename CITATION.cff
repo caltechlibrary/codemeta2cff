@@ -1,10 +1,17 @@
-
-cff-version: 1.1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-authors:
-   - family-names: Morrell
-     given-names: Thomas E.
-     orcid: https://orcid.org/0000-0001-9266-5146
-version: 0.0.3
 title: codemeta2cff
-date-released: 2021-07-16
+authors:
+  - family-names: Morrell
+    given-names: Thomas E.
+    orcid: https://orcid.org/0000-0001-9266-5146
+abstract: GitHub Action for converting a CodeMeta file to CITATION.cff
+repository-code: "https://github.com/caltechlibrary/codemeta2cff"
+type: software
+version: 0.0.4
+license-url: "https://github.com/caltechlibrary/codemeta2cff/blob/main/LICENSE"
+keyword:
+  - codemeta
+  - software
+  - cff
+date-released: 2022-06-30
