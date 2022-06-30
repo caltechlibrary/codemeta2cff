@@ -4,7 +4,7 @@ on:
       - CITATION.cff
     workflow_dispatch:
 
-name: CITATION.cff
+name: CFF Validator
 jobs:
   Validate-CITATION-cff:
     runs-on: ubuntu-latest
