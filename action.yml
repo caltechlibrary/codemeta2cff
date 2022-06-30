@@ -9,7 +9,7 @@ runs:
   steps:
     - name: wget
       shell: bash
-      run: wget -O datatools.zip https://github.com/caltechlibrary/datatools/releases/download/v1.0.4/datatools-v1.0.4-linux-amd64.zip
+      run: wget -O datatools.zip https://github.com/caltechlibrary/datatools/releases/download/v1.1.1/datatools-v1.1.1-linux-amd64.zip
     - name: unzip
       shell: bash
       run: unzip -qq datatools.zip -d datatools
