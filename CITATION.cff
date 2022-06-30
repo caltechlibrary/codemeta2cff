@@ -10,7 +10,7 @@ repository-code: "https://github.com/caltechlibrary/codemeta2cff"
 type: software
 version: 0.1.0
 license-url: "https://github.com/caltechlibrary/codemeta2cff/blob/main/LICENSE"
-keyword:
+keywords:
   - codemeta
   - software
   - cff
