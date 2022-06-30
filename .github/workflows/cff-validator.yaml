@@ -2,7 +2,12 @@ on:
   push:
     paths:
       - CITATION.cff
-    workflow_dispatch:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason'
+        required: false
+        default: 'Manual trigger'
 
 name: CFF Validator
 jobs:
