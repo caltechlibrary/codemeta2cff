@@ -5,7 +5,10 @@
     {
       "@id": "https://orcid.org/0000-0001-9266-5146",
       "@type": "Person",
-      "affiliation": "California Institute of Technology Library",
+      "affiliation": {
+                "@type": "Organization",
+                "name": "Caltech Library"
+            }
       "familyName": "Morrell",
       "givenName": "Thomas E."
     }
