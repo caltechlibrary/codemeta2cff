@@ -6,7 +6,7 @@ users to avoid updating multiple files.
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
 [![Latest release](https://img.shields.io/github/v/release/caltechlibrary/codemeta2cff.svg?style=flat-square&color=b44e88)](https://github.com/caltechlibrary/codemeta2cff/releases)
-[![DOI](https://data.caltech.edu/badge/386727932.svg)](https://data.caltech.edu/badge/latestdoi/386727932)
+[![DOI](https://data.caltech.edu/badge/DOI/10.22002/17jew-b7x11.svg)](https://doi.org/10.22002/17jew-b7x11)
 
 
 Table of contents
