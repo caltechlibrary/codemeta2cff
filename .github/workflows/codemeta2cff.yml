@@ -1,9 +1,10 @@
 name: CodeMeta2CFF
+run-name: Run CodeMeta2CFF after ${{github.event_name}} by ${{github.actor}}
 
 on:
   push:
     tags:
-      - v*    
+      - v*
   workflow_dispatch:
     inputs:
       reason:
