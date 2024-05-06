@@ -33,8 +33,37 @@ following to your workflow
         uses: caltechlibrary/codemeta2cff@main
 ```
 
-A full workflow for converting on a release is available at https://github.com/caltechlibrary/codemeta2cff/blob/main/.github/workflows/codemeta2cff.yml
+A full workflow for converting on a release is
 
+````
+name: CodeMeta2CFF
+run-name: Run CodeMeta2CFF after ${{github.event_name}} by ${{github.actor}}
+
+on:
+  push:
+    tags:
+      - v*
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason'
+        required: false
+        default: 'Manual trigger'
+
+jobs:
+  CodeMeta2CFF:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Convert CFF
+        uses: caltechlibrary/codemeta2cff@main
+      - name: Commit CFF
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Add CITATION.cff for release'
+          add: 'CITATION.cff'
+```
 
 Known issues and limitations
 ----------------------------
