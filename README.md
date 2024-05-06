@@ -35,7 +35,7 @@ following to your workflow
 
 A full workflow for converting on a release is
 
-````
+```
 name: CodeMeta2CFF
 run-name: Run CodeMeta2CFF after ${{github.event_name}} by ${{github.actor}}
 
