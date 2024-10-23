@@ -2,13 +2,16 @@ on:
   push:
     paths:
       - CITATION.cff
+  pull_request:
+    paths:
+      - CITATION.cff
   workflow_dispatch:
     inputs:
       reason:
         description: 'Reason'
         required: false
         default: 'Manual trigger'
-
+        
 name: CFF Validator
 jobs:
   Validate-CITATION-cff:
@@ -17,23 +20,17 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       RSPM: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"
-
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
+        
       # This is needed for workflows running on
       # ubuntu-20.04 or later
-      - name: Install V8
+      - name: Install V8 
         if: runner.os == 'Linux'
         run: |
           sudo apt-get install -y libv8-dev
+
       - name: Validate CITATION.cff
         uses: dieghernan/cff-validator@main
-
-      # Upload artifact
-      - uses: actions/upload-artifact@v2
-        if: failure()
-        with:
-          name: citation-cff-errors
-          path: citation_cff_errors.md
