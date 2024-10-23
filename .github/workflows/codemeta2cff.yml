@@ -3,8 +3,7 @@ run-name: Run CodeMeta2CFF after ${{github.event_name}} by ${{github.actor}}
 
 on:
   push:
-    tags:
-      - v*
+    paths: ['codemeta.json']
   workflow_dispatch:
     inputs:
       reason:
@@ -17,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Convert CFF
         uses: caltechlibrary/codemeta2cff@main
       - name: Commit CFF
