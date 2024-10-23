@@ -14,7 +14,6 @@ env:
 # │ The rest of this file should be left as-is │
 # ╰────────────────────────────────────────────╯
 
-name: InvenioRDM GitHub Archiver
 on:
   release:
     types: [published]
