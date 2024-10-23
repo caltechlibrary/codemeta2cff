@@ -2,7 +2,8 @@ CodeMeta2CFF
 =====================================================
 
 A GitHub action to convert a codemeta.json file to CITATION.cff. This allows
-users to avoid updating multiple files.
+users to only have to update the CodeMeta file, but still get the benefits of
+havign both files in their repo.
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
 [![Latest release](https://img.shields.io/github/v/release/caltechlibrary/codemeta2cff.svg?style=flat-square&color=b44e88)](https://github.com/caltechlibrary/codemeta2cff/releases)
@@ -33,7 +34,7 @@ following to your workflow
         uses: caltechlibrary/codemeta2cff@main
 ```
 
-A full workflow for converting on a release is
+A full workflow for updating a CFF file based on CodeMeta file changes is:
 
 ```
 name: CodeMeta2CFF
@@ -41,8 +42,7 @@ run-name: Run CodeMeta2CFF after ${{github.event_name}} by ${{github.actor}}
 
 on:
   push:
-    tags:
-      - v*
+    paths: ['codemeta.json']
   workflow_dispatch:
     inputs:
       reason:
@@ -80,14 +80,13 @@ If you encounter any problems, please raise them in the issue tracker.
 License
 -------
 
-Software produced by the Caltech Library is Copyright © 2021 California Institute of Technology.  This software is freely distributed under a BSD/MIT type license.  Please see the [LICENSE](LICENSE) file for more information.
+Software produced by the Caltech Library is Copyright © 2021-2024 California Institute of Technology.  This software is freely distributed under a BSD/MIT type license.  Please see the [LICENSE](LICENSE) file for more information.
 
 
 Authors and history
 ---------------------------
 
-This action was developed by Tom Morrell, using the codemeta2cff Go application
-written by Robert Doiel
+This action was developed by Tom Morrell, using the codemeta2cff Go application written by Robert Doiel
 
 Acknowledgments
 ---------------
