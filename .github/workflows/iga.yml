@@ -41,22 +41,10 @@ on:
 
 run-name: Archive ${{inputs.release_tag || 'latest release'}} in InvenioRDM
 jobs:
-  CodeMeta2CFF:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Convert CFF
-        uses: caltechlibrary/codemeta2cff@main
-      - name: Commit CFF
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: 'Add CITATION.cff for release'
-          add: "['CITATION.cff']"
   run_iga:
     name: Send to ${{needs.get_repository.outputs.server}}
     runs-on: ubuntu-latest
-    needs: [get_repository, CodeMeta2CFF]
+    needs: [get_repository]
     steps:
       - uses: caltechlibrary/iga@main
         with:
