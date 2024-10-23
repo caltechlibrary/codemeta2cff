@@ -22,5 +22,5 @@ jobs:
       - name: Commit CFF
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Add CITATION.cff for release'
+          message: 'Add updated CITATION.cff from codemeta.json file'
           add: 'CITATION.cff'
