@@ -3,7 +3,7 @@ CodeMeta2CFF
 
 A GitHub action to convert a codemeta.json file to CITATION.cff. This allows
 users to only have to update the CodeMeta file, but still get the benefits of
-havign both files in their repo.
+having both files in their repo.
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
 [![Latest release](https://img.shields.io/github/v/release/caltechlibrary/codemeta2cff.svg?style=flat-square&color=b44e88)](https://github.com/caltechlibrary/codemeta2cff/releases)
