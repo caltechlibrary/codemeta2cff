@@ -25,7 +25,7 @@
   ],
   "name": "codemeta2cff",
   "description": "GitHub Action for converting a CodeMeta file to CITATION.cff",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "maintainer": [
     {
       "@id": "https://orcid.org/0000-0001-9266-5146",
