@@ -8,7 +8,7 @@ authors:
 abstract: GitHub Action for converting a CodeMeta file to CITATION.cff
 repository-code: "https://github.com/caltechlibrary/codemeta2cff"
 type: software
-doi: 10.22002/0nk5w-p4t88
+doi: 10.22002/q79s0-7w020
 version: 0.3.3
 license-url: "https://github.com/caltechlibrary/codemeta2cff/blob/main/LICENSE"
 keywords:
