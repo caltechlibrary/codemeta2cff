@@ -11,7 +11,7 @@ env:
 
   # This variable is a setting for post-archiving CodeMeta file updates.
   # If you don't have a CodeMeta file, you can remove the add_doi_codemeta
-  # job at the bottom of this file.
+  # and Codemeta2CFF jobs at the bottom of this file.
   ref: main
 
 # ╭────────────────────────────────────────────╮
